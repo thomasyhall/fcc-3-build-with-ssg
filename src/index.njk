@@ -11,8 +11,8 @@ layout: base.njk
      ❤️
   </div>
 
-  {% for article in news.articles %}
   <ul>
+  {% for article in news.articles %}
     <li>{{ article.title }}</li>
     {% endfor %}
   </ul>

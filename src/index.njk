@@ -10,5 +10,11 @@ layout: base.njk
   <div class="love">
      ❤️
   </div>
+
+  {% for article in news.articles %}
+  <ul>
+    <li>{{ article.title }}</li>
+    {% endfor %}
+  </ul>
 </div>
 <script src="/js/vibe.js"></script>

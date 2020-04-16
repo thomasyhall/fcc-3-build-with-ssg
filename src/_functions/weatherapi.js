@@ -1,5 +1,7 @@
 const axios = require("axios");
 
+require('dotenv').config();
+
 exports.handler = async function(event, context, callback) {
 
   const { lat, lon } = event.queryStringParameters;
